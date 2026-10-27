@@ -100,7 +100,12 @@ public class ReadJson {
             System.out.println(eye_color);
             // to do: print out the eye color of Darth Vader
             //hw: print out starships
-         //   JSONArray starShips = (String)jsonObject.get("starships");
+            JSONArray starShip = (JSONArray)jsonObject.get("starships");
+            for (int i = 0; i < starShip.size(); i++) {
+               String Ship = (String) starShip.get(i);
+               System.out.println(Ship);
+                // System.out.println(person.getInt("key"));
+            }
 
         }
 
